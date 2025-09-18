@@ -200,7 +200,54 @@ Response:
 }
 ```
 
----
+1. Create Recipe
+
+Method: POST
+URL:http:{{BASE_URL}}/api/recipes/
+
+create the d=sample shema fields and value
+
+2. Get a Recipe
+
+First, get a recipes using your getAllRecipes endpoint.
+Example:
+Postman Request Setup
+
+Method: GET
+URL:http:{{BASE_URL}}/api/recipes/:id
+Copy the \_id: 6508d8c2f1a4f23a4b123456.
+
+3. Find a Recipe ID
+
+First, get a recipe \_id using your getAllRecipes or getRecipeById endpoint.
+Example:
+Postman Request Setup
+
+Method: GET
+URL:
+http:{{BASE_URL}}/api/recipes/:id
+Copy the \_id: 6508d8c2f1a4f23a4b123456.
+
+4. Postman Request Setup
+
+Method: PUT
+
+URL:http:{{BASE_URL}}/api/recipes/:id
+
+Body → raw → JSON
+Example payload to update description & servings:
+
+{
+"description": "Fresh seasonal fruit salad with honey drizzle",
+"servings": 3,
+"difficulty": "medium"
+}
+
+5. Delete Receipr
+
+Method: DELETE
+
+## URL:http:{{BASE_URL}}/api/recipes/:id
 
 6.Testing
 
