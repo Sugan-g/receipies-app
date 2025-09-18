@@ -228,9 +228,9 @@ URL:
 http:{{BASE_URL}}/api/recipes/:id
 Copy the \_id: 6508d8c2f1a4f23a4b123456.
 
-4. Postman Request Setup
+4. Postman Update
 
-Method: PUT
+Method: PATCH
 
 URL:http:{{BASE_URL}}/api/recipes/:id
 
@@ -243,7 +243,7 @@ Example payload to update description & servings:
 "difficulty": "medium"
 }
 
-5. Delete Receipr
+5. Delete Receipe
 
 Method: DELETE
 
